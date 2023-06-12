@@ -41,7 +41,6 @@ public class ExprSectionInv extends EventValueExpression<Inventory> {
 
     @Override
     protected @Nullable Inventory @NotNull [] get(@NotNull Event e) {
-        System.out.println(Arrays.toString(e.getHandlers().getRegisteredListeners()));
         return super.get(e);
     }
 }
